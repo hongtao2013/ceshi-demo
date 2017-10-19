@@ -7,44 +7,44 @@ Page({
 				subItems: [
 					{
 						name: 'view',
-						url: '/view/index'
+						url: '../view/index'
 					},
 					{
 						name: 'scroll-view',
-						url: '/view/scroll'
+						url: '../view/scroll'
 					},
 					{
 						name: 'movable-view',
-						url: '/view/movable'
+						url: '../view/movable'
 					},
 					{
 						name: 'cover-view',
-						url: '/view/cover'
+						url: '../view/cover'
 					}
 				]
 			},
-			// {
-			// 	name: "基础内容",
-			// 	show: false,
-			// 	subItems: [
-			// 		{
-			// 			name: 'icon',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'text',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'rich-text',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'progress',
-			// 			url: ''
-			// 		}
-			// 	]
-			// },
+			{
+				name: "基础内容",
+				show: false,
+				subItems: [
+					{
+						name: 'icon',
+						url: '../base/icon'
+					},
+					{
+						name: 'text',
+						url: '../base/text'
+					},
+					{
+						name: 'rich-text',
+						url: '../base/rich-text'
+					},
+					{
+						name: 'progress',
+						url: '../base/progress'
+					}
+				]
+			},
 			// {
 			// 	name: "表单组件",
 			// 	show: false,
@@ -169,6 +169,9 @@ Page({
 			// }
 		]
 	},
+	onLoad: function(){
+		console.log(getCurrentPages().length)
+	},
 	subShow: function(e){
 		var dataset = e.currentTarget.dataset;
 		var data_id = parseInt(dataset.index);
@@ -183,11 +186,13 @@ Page({
 		this.setData({
 			[set_item]: this.data.items[data_id].show
 		})
+
 	},
-	subLink: function(e){
-		var url = e.currentTarget.dataset.url;
-		wx.redirectTo({
-			url: ".."+url
-		})
-	}
+	// subLink: function(e){
+	// 	var url = e.currentTarget.dataset.url;
+	// 	wx.redirectTo({
+	// 		url: ".."+url
+	// 	})
+
+	// }
 })

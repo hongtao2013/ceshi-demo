@@ -6,7 +6,11 @@
         "pages/items/view/index",
         "pages/items/view/scroll",
         "pages/items/view/movable",
-        "pages/items/view/cover"
+        "pages/items/view/cover",
+        "pages/items/base/icon",
+        "pages/items/base/text",
+        "pages/items/base/rich-text",
+        "pages/items/base/progress"
     ],
     "window":{
         "backgroundTextStyle":"light",

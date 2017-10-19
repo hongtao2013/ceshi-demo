@@ -5,7 +5,7 @@
 			<view class="title-flex iconfont {{item.show? 'icon-xiangshang2':'icon-xiangxia2'}}"></view>
 		</view>
 		<view wx:for="{{item.subItems}}" wx:for-item="subitem" wx:key="{{*this}}" class="{{item.show? 'item-show':'item-hide'}} home-item-label" bindtap="subLink" data-url="{{subitem.url}}">
-			<view bindtap="subLink" data-url="{{subitem.url}}">{{index+1}}:{{subitem.name}}</view>
+			<navigator url="{{subitem.url}}">{{index+1}}:{{subitem.name}}</navigator>
 		</view>
 	</view>
 </view>
