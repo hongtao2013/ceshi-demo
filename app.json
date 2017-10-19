@@ -1,12 +1,36 @@
 {
-  "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "pages":[
+        "pages/home/index",
+        "pages/logs/logs",
+        "pages/items/home/index",
+        "pages/items/view/index",
+        "pages/items/view/scroll",
+        "pages/items/view/movable",
+        "pages/items/view/cover"
+    ],
+    "window":{
+        "backgroundTextStyle":"light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle":"black"
+    },
+    "tabBar":{
+        "list":[
+            {
+                "pagePath": "pages/home/index",
+                "text": "首页",
+                "iconPath": "images/home-icon.png",
+                "selectedIconPath": "images/home-fill-icon.png"
+            },
+            {
+                "pagePath": "pages/items/home/index",
+                "text": "DOME",
+                "iconPath": "images/demo-icon.png",
+                "selectedIconPath": "images/demo-fill-icon.png"
+            }
+        ],
+        "color": "#ddd",
+        "selectedColor": "#000"
+    },
+    "debug": true
 }

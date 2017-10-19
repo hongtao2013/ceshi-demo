@@ -1,0 +1,11 @@
+<view class="home-index-container">
+	<view wx:for="{{items}}" wx:for-item="item" wx:key="{{*this}}" class="home-item-content">
+		<view class="home-item-title" bindtap="subShow" data-index="{{index}}" data-show="{{item.show}}">
+			<view class="title-flex">{{item.name}}</view>
+			<view class="title-flex iconfont {{item.show? 'icon-xiangshang2':'icon-xiangxia2'}}"></view>
+		</view>
+		<view wx:for="{{item.subItems}}" wx:for-item="subitem" wx:key="{{*this}}" class="{{item.show? 'item-show':'item-hide'}} home-item-label" bindtap="subLink" data-url="{{subitem.url}}">
+			<view bindtap="subLink" data-url="{{subitem.url}}">{{index+1}}:{{subitem.name}}</view>
+		</view>
+	</view>
+</view>

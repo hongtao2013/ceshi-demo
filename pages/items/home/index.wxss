@@ -1,0 +1,31 @@
+.home-index-container{
+	width: 670rpx;
+	margin: 40rpx auto;
+}
+
+.home-item-content{
+	width: 100%;
+	font-size: 32rpx;
+	border-bottom: 1rpx solid #ddd;
+}
+
+.home-item-title{
+	padding: 20rpx;
+	color: #000;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.home-item-label{
+	padding: 20rpx 30rpx;
+	color: rgba(0,0,0,0.7);
+}
+
+.item-show{
+	display: block;
+}
+
+.item-hide{
+	display: none;
+}
