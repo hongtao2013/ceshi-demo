@@ -1,5 +1,2 @@
-.home-index-container{
-	width: 670rpx;
-	margin: 40rpx auto;
-	background: #ffff00;
-}
+@import "../common/common.wxss";
+

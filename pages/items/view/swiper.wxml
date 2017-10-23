@@ -1,0 +1,22 @@
+<view class="view-swiper-container view-container">
+	<view class="view-title">swiper 滑块视图容器</view>
+
+	<swiper indicator-dots="{{indicatorDots}}"
+	autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="changeLog">
+		<block wx:for="{{imgUrls}}" wx:key="{{*this}}">
+			<swiper-item>
+				<image src="{{item}}" class="slide-image" width="355" height="150"/>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<button bindtap="changeIndicatorDots"> 面板指示点 </button>
+
+	<button bindtap="changeAutoplay"> 自动切换 </button>
+
+	<slider bindchange="intervalChange" show-value min="500" max="2000"/> 自动切换时间间隔
+
+	<slider bindchange="durationChange" show-value min="1000" max="10000"/> 滑动动画时长
+
+	<view>现在展示的是swiper第{{pageNum+1}}页</view>
+</view>

@@ -4,5 +4,8 @@ Page({
 		
 	},
 	onload: function(e){
+	},
+	colorChange: function(){
+		
 	}
 })

@@ -1,3 +1,63 @@
-<view>
-	scroll
+<view class="view-scroll-container view-container">
+	<view class="view-title">scroll-view 可滚动视图区域</view>
+
+	<view class="view-attr scroll-content">
+		<text>scroll-x:</text>
+		<view>允许横向滚动。要想横向滚动，首先要先把子元素设置成一行，发现float不能用要对子元素进行display:inline-block ,容器进行 white-space: nowrap;</view>
+		<scroll-view scroll-x class="result-content scroll-hx">
+		横向滚动查看效果，测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</scroll-view>
+	</view>
+
+	<view class="view-attr scroll-content">
+		<text>scroll-y:</text>
+		<view>允许纵向滚动</view>
+		<scroll-view scroll-y class="result-content scroll-zx">
+		横向滚动查看效果，测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</scroll-view>
+	</view>
+
+	<view class="view-attr scroll-content">
+		<text>upper-threshold:</text>
+		<view>距顶部/左边多远时（单位px），触发 scrolltoupper 事件</view>
+		<scroll-view scroll-x class="result-content scroll-hx" upper-threshold="50" bindscrolltoupper="upper">
+		横向滚动查看效果，测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</scroll-view>
+	</view>
+
+	<view class="view-attr scroll-content">
+		<text>scroll-y:</text>
+		<view>距底部/右边多远时（单位px），触发 scrolltolower 事件。将lower-threshold属性设为0或者1或者很小的值，就可以只加载一次 因为小程序更新后lower-threshold的默认值是50 超过50之后就会多次触发。实际效果1最好</view>
+		<scroll-view scroll-y class="result-content scroll-zx" lower-threshold="1" bindscrolltolower="lower">
+		测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</scroll-view>
+	</view>
+
+	<view class="view-attr scroll-content">
+		<text>scroll-top、scroll-left:</text>
+		<view>设置竖向、横向滚动条位置</view>
+	</view>
+
+	<view class="view-attr scroll-content">
+		<text>scroll-into-view:</text>
+		<view>值应为某子元素id（id不能以数字开头）。设置哪个方向可滚动，则在哪个方向滚动到该元素</view>
+		<view scroll-into-view="scroll-into" scroll-top="20">点击查看效果</view>
+		<scroll-view scroll-y class="result-content scroll-zx">
+			<view>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</view>
+			<view>测试1</view>
+			<view id="scroll-into">测试2</view>
+		</scroll-view>
+	</view>
+
+	<view class="view-attr scroll-content">
+		<text>scroll-with-animation:</text>
+		<view>在设置滚动条位置时使用动画过渡，设置Boolean</view>
+	</view>
+
+	<view class="view-attr scroll-content">
+		<text>enable-back-to-top:</text>
+		<view>iOS点击顶部状态栏、安卓双击标题栏时，滚动条返回顶部，只支持竖向，设置Boolean</view>
+	</view>
+
+	<view class="view-attr scroll-content">
+		<text>bindscroll:</text>
+		<view>滚动时触发，event.detail = {scrollLeft, scrollTop, scrollHeight, scrollWidth, deltaX, deltaY}</view>
+	</view>
+
 </view>

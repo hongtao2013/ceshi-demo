@@ -5,6 +5,7 @@
         "pages/items/home/index",
         "pages/items/view/index",
         "pages/items/view/scroll",
+        "pages/items/view/swiper",
         "pages/items/view/movable",
         "pages/items/view/cover",
         "pages/items/base/icon",

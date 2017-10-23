@@ -1,3 +1,32 @@
-<view>
-	view
+<view class="view-index-container view-container">
+	<view class="view-title">view 视图容器</view>
+
+	<view class="view-attr">
+		<text>hover-class:</text>
+		<view>点击时，hover-class指定的class显示出来</view>
+		<view class="result-content" hover-class="active">点击查看效果</view>
+	</view>
+
+	<view class="view-attr">
+		<text>hover-stop-propagation:</text>
+		<view>指定是否阻止本节点的祖先节点出现点击态</view>
+		<view class="result-content" hover-class="active"> 
+			<view hover-stop-propagation="true">
+				点击查看效果
+			</view>
+		</view>
+	</view>		
+
+	<view class="view-attr">
+		<text>hover-start-time:</text>
+		<view>按住后多久出现点击态，单位毫秒</view>
+		<view class="result-content" hover-start-time="1000" hover-class="active">点击查看效果</view>
+	</view>
+
+	<view class="view-attr">
+		<text>hover-stay-time:</text>
+		<view>手指松开后点击态保留时间，单位毫秒</view>
+		<view class="result-content" hover-stay-time="3000" hover-class="active">点击查看效果</view>
+	</view>
+
 </view>

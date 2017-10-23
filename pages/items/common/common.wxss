@@ -1,0 +1,24 @@
+.view-container{
+	width: 670rpx;
+	margin: 40rpx auto;
+}
+
+.active{
+	color: red;
+}
+
+.view-title{
+	padding: 30rpx 0;
+	font-size: 32rpx;
+}
+
+.view-attr{
+	font-size: 30rpx;
+}
+
+.result-content{
+	padding: 30rpx 0;
+	margin: 30rpx auto;
+	background: rgba(0,0,0,0.05);
+	border: 1rpx solid #ddd;
+}

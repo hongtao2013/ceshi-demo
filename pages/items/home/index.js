@@ -14,6 +14,10 @@ Page({
 						url: '../view/scroll'
 					},
 					{
+						name: 'swiper',
+						url: '../view/swiper'
+					},
+					{
 						name: 'movable-view',
 						url: '../view/movable'
 					},
