@@ -1,3 +1,21 @@
-<view>
-	icon
+<view class="base-icon-container view-container">
+	<view class="group">
+		<block wx:for="{{iconSize}}">
+			<icon type="success" size="{{item}}"/>
+		</block>
+	</view>
+
+	<view class="group">
+		<block wx:for="{{iconType}}">
+			<icon type="{{item}}" size="40"/>
+		</block>
+	</view>
+
+
+	<view class="group">
+		<block wx:for="{{iconColor}}">
+			<icon type="success" size="40" color="{{item}}"/>
+		</block>
+	</view>
+	<view>type、size、color控制icon的样式、大小（px）、颜色</view>
 </view>

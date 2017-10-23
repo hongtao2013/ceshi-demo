@@ -16,7 +16,6 @@ Page({
     })
   },
   onLoad: function () {
-    console.log(getCurrentPages())
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

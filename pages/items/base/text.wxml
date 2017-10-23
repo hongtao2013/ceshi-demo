@@ -1,3 +1,6 @@
-<view>
-	text
+<view class="base-text-container view-container">
+	<text>{{text}}</text>
+
+	<button bindtap="add">增加一行</button>
+	<button bindtap="remove">减少一行</button>	
 </view>

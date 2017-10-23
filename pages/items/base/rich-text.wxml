@@ -1,3 +1,25 @@
-<view>
-	rich-text
+<view class="base-rich-container view-container">
+	<rich-text nodes="{{nodes}}"></rich-text>
+
+	<view>现支持两种节点，通过type来区分，分别是元素节点和文本节点，默认是元素节点，在富文本区域里显示的HTML节点。</view>
+	<view>元素节点: type=node</view>
+
+	<view>name: 支持部分受信任的HTML节点。a、div、h1、img...</view>
+	<view>attrs: 支持部分受信任的属性，遵循Pascal命名法。增加class，style等</view>
+
+	<view>children: 子节点列表，结构和nodes一致。</view>
+
+	<text decode="true">
+		nodes: [{
+		&nbsp;&nbsp;name: 'div',
+		&nbsp;&nbsp;attrs: {
+		&nbsp;&nbsp;&nbsp;&nbsp;class: 'div_class',
+		&nbsp;&nbsp;&nbsp;&nbsp;style: 'line-height: 60px; color: red;'
+		&nbsp;&nbsp;},
+		&nbsp;&nbsp;children: [{
+		&nbsp;&nbsp;&nbsp;&nbsp;type: 'text',
+		&nbsp;&nbsp;&nbsp;&nbsp;text: 'Hello&nbsp;World!'
+		&nbsp;&nbsp;}]
+		}]
+	</text>
 </view>
