@@ -1,0 +1,6 @@
+@import "../common/common.wxss";
+
+.section{
+	margin-bottom: 60rpx;
+	font-size: 32rpx;
+}

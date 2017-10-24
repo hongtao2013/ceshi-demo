@@ -1,0 +1,15 @@
+<view class="form-checkbox-container view-container">
+	<view>checkbox</view>
+	<checkbox-group bindchange="checkboxChange">
+		<label class="checkbox" wx:for="{{items}}" wx:key="{{*this}}">
+			<checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+		</label>
+	</checkbox-group>
+
+	<view>radio</view>
+	<radio-group class="radio-group" bindchange="radioChange">
+		<label class="radio" wx:for="{{items}}" wx:key="{{*this}}">
+			<radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+		</label>
+	</radio-group>
+</view>

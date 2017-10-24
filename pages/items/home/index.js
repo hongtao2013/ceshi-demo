@@ -49,56 +49,40 @@ Page({
 					}
 				]
 			},
-			// {
-			// 	name: "表单组件",
-			// 	show: false,
-			// 	subItems: [
-			// 		{
-			// 			name: 'button',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'checkbox',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'form',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'input',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'label',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'picker',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'picker-view',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'radio',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'slider',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'switch',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'textarea',
-			// 			url: ''
-			// 		}
-			// 	]
-			// },
+			{
+				name: "表单组件",
+				show: false,
+				subItems: [
+					{
+						name: 'button',
+						url: '../form/button'
+					},
+					{
+						name: 'check-radio',
+						url: '../form/check-radio'
+					},
+					{
+						name: 'form',
+						url: '../form/form'
+					},
+					{
+						name: 'input',
+						url: '../form/input'
+					},
+					{
+						name: 'label',
+						url: '../form/label'
+					},
+					{
+						name: 'picker',
+						url: '../form/picker'
+					},
+					{
+						name: 'picker-view',
+						url: '../form/picker-view'
+					}
+				]
+			},
 			// {
 			// 	name: "导航",
 			// 	show: false,

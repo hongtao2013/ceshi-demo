@@ -11,7 +11,14 @@
         "pages/items/base/icon",
         "pages/items/base/text",
         "pages/items/base/rich-text",
-        "pages/items/base/progress"
+        "pages/items/base/progress",
+        "pages/items/form/button",
+        "pages/items/form/check-radio",
+        "pages/items/form/form",
+        "pages/items/form/input",
+        "pages/items/form/label",
+        "pages/items/form/picker",
+        "pages/items/form/picker-view"
     ],
     "window":{
         "backgroundTextStyle":"light",

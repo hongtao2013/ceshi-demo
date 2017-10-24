@@ -1,0 +1,72 @@
+<view class="form-button-container view-container">
+	
+	<view class="view-attr">
+		<view>auto-focus控制input聚焦，逐渐淘汰，最新的focus同样。</view>
+		<view class="section">
+			<input placeholder="这是一个可以自动聚焦的input" auto-focus/>
+		</view>
+	
+		<view class="section">
+			<input placeholder="这个只有在按钮点击的时候才聚焦" focus="{{focus}}" />
+			<view class="btn-area">
+				<button bindtap="bindButtonTap">使得输入框获取焦点</button>
+			</view>
+		</view>
+	</view>
+
+	<view class="view-attr">
+		<view>maxlength控制输入长度，默认是140个</view>
+		<view class="section">
+			<input  maxlength="10" placeholder="最大输入长度10" />
+		</view>
+
+		<view class="section">
+			<view class="section__title">你输入的是：{{inputValue}}</view>
+			<input  bindinput="bindKeyInput" placeholder="输入同步到view中"/>
+		</view>
+
+		<view class="section">
+			<input  bindinput="bindReplaceInput" placeholder="连续的两个1会变成2" />
+		</view>
+	</view>
+
+	<view class="view-attr">
+		<view>type控制input类型，number数字输入键盘，text文本输入键盘，idcard身份证输入键盘，digit带小数点的数字键盘</view>
+		<view class="section">
+			<input password type="number" placeholder="number"/>
+		</view>
+
+		<view class="section">
+			<input password type="text" placeholder="password"/>
+		</view>
+
+		<view class="section">
+			<input type="digit" placeholder="带小数点的数字键盘"/>
+		</view>
+
+		<view class="section">
+			<input type="idcard" placeholder="身份证输入键盘" />
+		</view>
+
+		<view>password是否是密码类型，默认false</view>
+		<view class="section">
+			<input password="true" type="number" placeholder="隐藏的password"/>
+		</view>
+	</view>
+
+	<view class="view-attr">
+		<view>placeholder,有placeholder-style、placeholder-class控制样式</view>
+		<view class="section">
+			<input placeholder-style="color:red" placeholder="占位符字体是红色的" />
+		</view>
+	</view>
+
+	<view class="view-attr">
+		<view>confirm-type设置键盘右下角按钮的文字,send右下角按钮为“发送”,search右下角按钮为“搜索”,next右下角按钮为“下一个”,go右下角按钮为“前往”,done右下角按钮为“完成”</view>
+		<view>confirm-hold点击键盘右下角按钮时是否保持键盘不收起,默认是false</view>
+	</view>
+
+	<view class="view-attr">
+		<view>bindinput、bindfocus、bindblur、bindconfirm,对应于，输入框输入、聚焦、失去焦点、完成按钮触发时，e.detail。</view>
+	</view>
+</view>
