@@ -1,0 +1,12 @@
+<view class="navigator-index-container view-container">
+	<view class="view-title">navigator 导航</view>
+
+	<view class="view-attr">
+		<text>navigator通过url设置跳转链接，相当于html中的a标签。</text>
+		<text>open-type属性设置跳转方式，navigateTo、redirectTo、switchTab、reLaunch、navigateBack</text>
+		<text>hove-class定义点击时的样式类，hover-stop-propagation指定是否阻止本节点的祖先节点出现点击态，hover-start-time按住后多久出现点击态，hover-stay-time手指松开后点击态保留时间。</text>
+		<navigator url="#" hover-class="navigator-hover">跳转到新页面</navigator>
+		<navigator url="#" open-type="redirect" hover-class="other-navigator-hover">在当前页打开</navigator>
+		<navigator url="#" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>
+	</view>
+</view>

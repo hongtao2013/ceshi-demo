@@ -18,7 +18,8 @@
         "pages/items/form/input",
         "pages/items/form/label",
         "pages/items/form/picker",
-        "pages/items/form/picker-view"
+        "pages/items/form/picker-view",
+        "pages/items/navigator/index"
     ],
     "window":{
         "backgroundTextStyle":"light",

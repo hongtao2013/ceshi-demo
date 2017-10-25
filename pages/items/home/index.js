@@ -83,16 +83,16 @@ Page({
 					}
 				]
 			},
-			// {
-			// 	name: "导航",
-			// 	show: false,
-			// 	subItems: [
-			// 		{
-			// 			name: 'navigator',
-			// 			url: ''
-			// 		}
-			// 	]
-			// },
+			{
+				name: "导航",
+				show: false,
+				subItems: [
+					{
+						name: 'navigator',
+						url: '../navigator/index'
+					}
+				]
+			},
 			// {
 			// 	name: "媒体组件",
 			// 	show: false,
