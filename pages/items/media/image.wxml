@@ -1,0 +1,17 @@
+<view class="media-image-container view-container">
+	<view class="view-title">image 图片</view>
+
+	<view class="view-attr">
+
+		<view class="view-text">image组件默认宽度300px、高度225px</view>
+		<view class="view-text">mode属性有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。</view>
+		<view class="page__bd">
+			<view class="section section_gap" wx:for="{{array}}" wx:for-item="item">
+				<view class="section__title">{{item.text}}</view>
+				<view class="section__ctn">
+					<image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="{{item.mode}}" src="{{src}}"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

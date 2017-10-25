@@ -93,28 +93,28 @@ Page({
 					}
 				]
 			},
-			// {
-			// 	name: "媒体组件",
-			// 	show: false,
-			// 	subItems: [
-			// 		{
-			// 			name: 'audio',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'image',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'video',
-			// 			url: ''
-			// 		},
-			// 		{
-			// 			name: 'camera',
-			// 			url: ''
-			// 		}
-			// 	]
-			// },
+			{
+				name: "媒体组件",
+				show: false,
+				subItems: [
+					{
+						name: 'audio',
+						url: '../media/audio'
+					},
+					{
+						name: 'image',
+						url: '../media/image'
+					},
+					{
+						name: 'video',
+						url: '../media/video'
+					},
+					{
+						name: 'camera',
+						url: '../media/camera'
+					}
+				]
+			},
 			// {
 			// 	name: "地图",
 			// 	show: false,

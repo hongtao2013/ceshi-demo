@@ -19,7 +19,11 @@
         "pages/items/form/label",
         "pages/items/form/picker",
         "pages/items/form/picker-view",
-        "pages/items/navigator/index"
+        "pages/items/navigator/index",
+        "pages/items/media/audio",
+        "pages/items/media/image",
+        "pages/items/media/video",
+        "pages/items/media/camera"
     ],
     "window":{
         "backgroundTextStyle":"light",

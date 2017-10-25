@@ -1,0 +1,25 @@
+<view class="media-audio-container view-container">
+	<view class="view-title">audio 音频</view>
+
+	<audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+
+	<view class="view-attr">
+		<button type="primary" bindtap="audioPlay">播放</button>
+		<button type="primary" bindtap="audioPause">暂停</button>
+		<button type="primary" bindtap="audio14">设置当前播放时间为14秒</button>
+		<button type="primary" bindtap="audioStart">回到开头</button>
+	</view>
+
+	<view class="view-attr">
+		<view class="view-text">id：audio组件的唯一标识符，页面onReady的时候创建wx.createAudioContext</view>
+
+		<view class="view-text">src：音频地址</view>
+		<view class="view-text">loop：是否循环播放,默认false</view>
+		<view class="view-text">controls：是否显示默认控件</view>
+		<view class="view-text">poster：默认控件上的音频封面的图片资源地址，如果 controls 属性值为 false 则设置 poster 无效</view>
+		<view class="view-text">name：默认控件上的音频名字，如果 controls 属性值为 false 则设置 name 无效</view>
+		<view class="view-text">author：默认控件上的作者名字，如果 controls 属性值为 false 则设置 author 无效</view>
+
+		<view class="view-text">binderror、bindplay、bindpause、bindtimeupdate、bindended分别对应绑定事件，错误、开始、暂停、改变时间、播放末尾</view>
+	</view>
+</view>

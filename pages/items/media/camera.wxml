@@ -1,0 +1,14 @@
+<view class="media-camera-container view-container">
+	<view class="view-title">camera 相机</view>
+
+	<view class="view-attr">
+		<view class="view-text">wx.createCameraContext</view>
+		<view class="view-text">device-position:前置或后置，值为front, back</view>
+		<view class="view-text">flash:闪光灯，值为auto, on, off</view>
+		<view class="view-text">bindstop:摄像头在非正常终止时触发，如退出后台等情况</view>
+		<view class="view-text">binderror:用户不允许使用摄像头时触发</view>
+		<view class="view-text">camera 组件是由客户端创建的原生组件，它的层级是最高的。可使用 cover-view cover-image覆盖在上面。</view>
+		<view class="view-text">同一页面只能插入一个 camera 组件。</view>
+		<view class="view-text">请勿在 scroll-view 中使用 camera 组件。</view>
+	</view>			
+</view>	

@@ -22,3 +22,7 @@
 	background: rgba(0,0,0,0.05);
 	border: 1rpx solid #ddd;
 }
+
+.view-text{
+	margin: 30rpx auto;
+}
