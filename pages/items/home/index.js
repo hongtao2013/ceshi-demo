@@ -3,7 +3,7 @@ Page({
 		items: [
 			{
 				name: "视图容器",
-				show: true,
+				show: false,
 				subItems: [
 					{
 						name: 'view',
@@ -115,26 +115,26 @@ Page({
 					}
 				]
 			},
-			// {
-			// 	name: "地图",
-			// 	show: false,
-			// 	subItems: [
-			// 		{
-			// 			name: 'map',
-			// 			url: ''
-			// 		}
-			// 	]
-			// },
-			// {
-			// 	name: "画布",
-			// 	show: false,
-			// 	subItems: [
-			// 		{
-			// 			name: 'canvas',
-			// 			url: ''
-			// 		}
-			// 	]
-			// },
+			{
+				name: "地图",
+				show: false,
+				subItems: [
+					{
+						name: 'map',
+						url: '../map/index'
+					}
+				]
+			},
+			{
+				name: "画布",
+				show: false,
+				subItems: [
+					{
+						name: 'canvas',
+						url: '../canvas/index'
+					}
+				]
+			},
 			// {
 			// 	name: "开放数据",
 			// 	show: false,
@@ -166,11 +166,7 @@ Page({
 		var data_show = dataset.show;
 		var set_item = "items["+data_id+"].show";
 		this.data.items[data_id].show = !this.data.items[data_id].show
-		// console.log(this.+set_item)
-		// this.setData({
-		// 	set_item: !data_show
-		// })
-		// console.log(this.data.items[0])
+
 		this.setData({
 			[set_item]: this.data.items[data_id].show
 		})

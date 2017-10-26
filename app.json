@@ -23,7 +23,9 @@
         "pages/items/media/audio",
         "pages/items/media/image",
         "pages/items/media/video",
-        "pages/items/media/camera"
+        "pages/items/media/camera",
+        "pages/items/map/index",
+        "pages/items/canvas/index"
     ],
     "window":{
         "backgroundTextStyle":"light",
